@@ -10,7 +10,8 @@
 export function comp(a: number[] | null, b: number[] | null): boolean {
   if (!a || !b) return false;
 
-  if (a.length !== b.length) return false;
+       if (a.length !== b.length) return false;
+
 
   const squaredA = a.map((x) => x * x);
 

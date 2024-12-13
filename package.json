@@ -1,0 +1,18 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "stored solutions and problems for CodeWars",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcanthony-webdev",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.16.0",
+    "eslint": "^9.16.0",
+    "eslint_d": "^14.2.2",
+    "globals": "^15.13.0",
+    "typescript-eslint": "^8.18.0"
+  }
+}
