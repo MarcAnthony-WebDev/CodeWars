@@ -12,7 +12,7 @@
 // my solution
 export const findOdd = (xs: number[]): number => {
   // Create an object to count occurrences of each number
-  let count: Record<number, number> = {};
+  const count: Record<number, number> = {};
 
   // Count occurrences of each number
   xs.forEach((num) => {
@@ -20,7 +20,7 @@ export const findOdd = (xs: number[]): number => {
   });
 
   // Find and return the number with an odd count
-  for (let num in count) {
+  for (const num in count) {
     if (count[num] % 2 !== 0) {
       return Number(num); // Convert string key to number
     }

@@ -10,30 +10,32 @@ Fundamentals
 Suggest kata description edits
 */
 
-const getCount = (str) => {
-  let vowelsCount = 0;
-  for (let i = 0; i < str.length; i++) {
-    switch (str[i]) {
-      case 'a':
-      case 'e':
-      case 'i':
-      case 'o':
-      case 'u':
-        vowelsCount++;
-        break;
-      default:
-        break;
-    }
-  }
-  return vowelsCount;
-};
+//const getCount = (str) => {
+//  let vowelsCount = 0;
+//  for (let i = 0; i < str.length; i++) {
+//    switch (str[i]) {
+//      case "a":
+//      case "e":
+//      case "i":
+//      case "o":
+//      case "u":
+//        vowelsCount++;
+//        break;
+//      default:
+//        break;
+//    }
+//  }
+//  return vowelsCount;
+//};
 
 //Best Practice:
-function getCount(str) {
-  return (str.match(/[aeiou]/gi) || []).length;
-}
+//function getCountTwo(str) {
+//  return (str.match(/[aeiou]/gi) || []).length;
+//}
 
 //Another one:
-function getCount(str) {
-  return str.split('').filter((c) => 'aeiouAEIOU'.includes(c)).length;
-}
+//function getCountThree(str) {
+//  return str.split("").filter((c) => "aeiouAEIOU".includes(c)).length;
+//}
+
+console.log(getCount("aeiou"));
