@@ -1,6 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.KataTwo = exports.Kata = void 0;
 // Trolls are attacking your comment section!
 // A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
 //
@@ -11,25 +8,17 @@ exports.KataTwo = exports.Kata = void 0;
 // Note: for this kata y isn't considered a vowel.
 //
 //My Solution:
-var Kata = /** @class */ (function () {
-    function Kata() {
-    }
-    Kata.disemvowel = function (str) {
+export class Kata {
+    static disemvowel(str) {
         return str
             .split("")
-            .filter(function (l) { return !l.match(/[aeiouAEIOU]/); })
+            .filter((l) => !l.match(/[aeiouAEIOU]/))
             .join("");
-    };
-    return Kata;
-}());
-exports.Kata = Kata;
-//Most Clever
-var KataTwo = /** @class */ (function () {
-    function KataTwo() {
     }
-    KataTwo.disemvowel = function (str) {
+}
+//Most Clever
+export class KataTwo {
+    static disemvowel(str) {
         return str.replace(/[aeiou]/gi, "");
-    };
-    return KataTwo;
-}());
-exports.KataTwo = KataTwo;
+    }
+}

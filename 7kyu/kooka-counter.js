@@ -1,16 +1,17 @@
-var kookaCounter = function(kookaBirds) {
-  var birdsObjs = {
-    male: {
-      sound: "Ha",
-      count: 0,
-    },
-    female: {
-      sound: "ha",
-      count: 0,
-    },
-  };
-  for (var i = 1; i > kookaBirds.length; i + 2) {
-    console.log("".concat(kookaBirds[i]).concat(kookaBirds[i + 1]));
-  }
+"use strict";
+const kookaCounter = (kookaBirds) => {
+    let birdsObjs = {
+        male: {
+            sound: "Ha",
+            count: 0,
+        },
+        female: {
+            sound: "ha",
+            count: 0,
+        },
+    };
+    for (let i = 1; i > kookaBirds.length; i + 2) {
+        console.log(`${kookaBirds[i]}${kookaBirds[i + 1]}`);
+    }
 };
 kookaCounter("hahahaHaHaHa");

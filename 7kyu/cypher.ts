@@ -69,12 +69,10 @@ export function encode(str: string): string {
     if (typeof str !== "string") {
         throw new Error("Input must be a string");
     }
-    return [...str].map((char) => encodeMap[char] ?? char).join("");
+    return str
+        .split("")
+        .map((char) => encodeMap[char] ?? char)
+        .join("");
 }
 
-export function decode(str: string): string {
-    if (typeof str !== "string") {
-        throw new Error("Input must be a string");
-    }
-    return [...str].map((char) => encodeMap[char] ?? char).join("");
-}
+export const decode = encode;
