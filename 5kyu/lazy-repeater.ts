@@ -24,12 +24,3 @@ export function makeLooper(str: string): () => string {
 
 const looper = makeLooper('abcdefg')
 console.log(looper())
-console.log(looper())
-console.log(looper())
-console.log(looper())
-console.log(looper())
-console.log(looper())
-console.log(looper())
-console.log(looper())
-console.log(looper())
-console.log(looper())
